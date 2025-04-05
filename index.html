@@ -79,71 +79,74 @@
           </div>
         </nav>
         </div></header>
-      <section class="skrollable u-clearfix u-image u-section-1" id="sec-bdc0">
-        <div class="u-clearfix u-sheet u-valign-bottom-xl u-sheet-1">
-          <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+    
+      
+    
+      
+      <section class="hero-section skrollable u-clearfix u-image u-section-1" id="sec-bdc0">
+    <div class="u-clearfix u-sheet u-valign-bottom-xl u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
-              <div class="u-layout-row">
-                <div class="u-container-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-delay="0">
-                  <div class="u-container-layout u-valign-top u-container-layout-1">
-                    <h5 class="u-align-left u-text u-text-1" style="color: green; background-color: yellow;">For those who long for a better life <br></h5>
-                  </div>
+                <div class="u-layout-row">
+                    <div class="u-container-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-delay="0">
+                        <div class="u-container-layout u-valign-top u-container-layout-1">
+                            <h5 class="u-align-left u-text u-text-1" style="color: green; background-color: yellow;">For those who long for a better life <br></h5>
+                        </div>
+                    </div>
+                    <div class="u-align-right u-container-align-right u-container-align-right-lg u-container-align-right-xl u-container-style u-layout-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-delay="0">
+                        <div class="u-container-layout u-valign-middle-xs u-valign-top-md u-container-layout-2">
+                            <h6 class="u-align-right u-text u-text-2" style="color: orange;">Supported by the powerful<br></h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="u-align-right u-container-align-right u-container-align-right-lg u-container-align-right-xl u-container-style u-layout-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-delay="0">
-                  <div class="u-container-layout u-valign-middle-xs u-valign-top-md u-container-layout-2">
-                    <h6 class="u-align-right u-text u-text-2" style="color: orange; background-color: ">Supported by the powerful<br></h6>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <h1 class="u-text u-text-body-alt-color u-text-default-xl u-text-3" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-delay="0">Nourishment Network <br></h1>
         </div>
-      </section>
+        <h1 class="u-text u-text-body-alt-color u-text-default-xl u-text-3" data-animation-name="customAnimationIn" data-animation-duration="2000" data-animation-delay="0">Nourishment Network <br></h1>
+    </div>
+</section>
+
+<style>
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.u-layout-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.u-layout-cell {
+    flex: 1 1 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.u-layout-cell-1, .u-layout-cell-2 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .u-layout-cell {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .u-layout-cell {
+        flex: 1;
+        max-width: 48%;
+    }
+}
+</style>
       
-      <script>
-        window.addEventListener('scroll', function() {
-          var section = document.getElementById('sec-bdc0');
-          var scrollPosition = window.scrollY;
-      
-          if (scrollPosition > 200) {
-            section.classList.add('change-bg');
-          } else {
-            section.classList.remove('change-bg');
-          }
-        });
-      
-        setTimeout(function() {
-          var section = document.getElementById('sec-bdc0');
-          section.classList.add('change-bg');
-        }, 6000);
-      </script>
-      
-      <style>
-        .u-section-1 {
-          background-image: url('https://cdn.dribbble.com/userupload/24966457/file/original-4b5b975553c10e8126f2227b9b35fae1.gif');
-          background-size: cover;
-          background-attachment: fixed;
-          transition: background-image 0.5s ease-in-out;
-        }
-      
-        .change-bg {
-          animation: vanish 0.5s forwards;
-        }
-      
-        @keyframes vanish {
-          0% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-            background-image: url(' https://cdn.dribbble.com/userupload/24965939/file/original-9c4254192254aa88e1dd62f2df732e38.gif');
-          }
-        }
-      </style>
+         
 
 
     <section class="u-clearfix u-section-2" id="sec-784c">
